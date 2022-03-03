@@ -46,9 +46,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; color: blac
       }
     }
 
+    .password-wrapper:hover {
+      background-color: rgb(0, 235, 255);
+    }
+
     .isdisabled {
       cursor: default;
       pointer-events: none;
+      opacity: 38%;
     }
 
     .slider-wrapper {
