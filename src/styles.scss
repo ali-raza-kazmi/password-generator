@@ -1,1 +1,161 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; color: black; }
+
+.container {
+  background-color: rgb(157, 70, 238);
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+  .main-section {
+    height: 550px;
+    width: 450px;
+    padding-top: 50px;
+    background-color: white;
+    display: grid;
+    justify-items: center;
+
+    .password-wrapper {
+      width: 400px;
+      height: 70px;
+      background-color: aqua;
+      display: grid;
+      border-radius: 8px;
+      align-items: center;
+      cursor: pointer;
+      user-select:none;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select:none;
+      -o-user-select:none;
+
+      .password-section {
+        display: inline;
+        margin: 0;
+        padding: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        word-wrap: normal;
+      }
+    }
+
+    .isdisabled {
+      cursor: default;
+      pointer-events: none;
+    }
+
+    .slider-wrapper {
+      width: 400px;
+      height: 50px;
+      background-color: aqua;
+      display: grid;
+      border-radius: 8px;
+
+      .label {
+        font-size: 0.8em;
+        margin-top: -25px;
+        margin-left: 5px;
+      }
+
+      .slider-container {
+        display: grid;
+        grid-template-columns: 50px 300px 50px;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+
+        .slider {
+          width: 300px;
+        }
+      }
+    }
+
+    .settings-wrapper {
+      width: 400px;
+      height: 200px;
+      display: grid;
+      border-radius: 8px;
+
+      .label {
+        font-size: 0.8em;
+        margin-top: -25px;
+        margin-left: 5px;
+      }
+
+      .include-numbers {
+        height: 50px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 200px 150px;
+        background-color: aqua;
+        border-radius: 8px;
+        font-size: 12px;
+
+        .setting-label {
+          // justify-self: end;
+        }
+
+        .setting-toggle {
+          justify-self: end;
+        }
+      }
+
+      .include-letters {
+        height: 50px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 200px 150px;
+        background-color: aqua;
+        border-radius: 8px;
+        font-size: 12px;
+
+        .setting-label {
+          // justify-self: end;
+        }
+
+        .setting-toggle {
+          justify-self: end;
+        }
+      }
+
+      .include-symbols {
+        height: 50px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 200px 150px;
+        background-color: aqua;
+        border-radius: 8px;
+        font-size: 12px;
+
+        .setting-label {
+          // justify-self: end;
+        }
+
+        .setting-toggle {
+          justify-self: end;
+        }
+      }
+    }
+
+    .generate-button-wrapper {
+      width: 400px;
+      height: 40px;
+      display: grid;
+      justify-content: center;
+      
+      button {
+        width: 400px;
+      }
+    }
+  }
+}
